@@ -1,0 +1,36 @@
+package com.sunbeam;
+
+//7. find the first non-repeating element: Input: { 1, 2, 3, -1, 2, 1, 0, 4, -1, 7, 8 } Output: 3
+public class Question7 {
+
+	public static int firstNonRepeating(int arr[], int N) {
+		int count=0;
+		for(int i=0; i<N-1; i++) {
+			for(int j=1; j<N; j++) {
+				if(arr[i]==arr[j]) {
+					count++;
+//					System.out.println(arr[i] + "is repeated at index"+ i +"and"+ j);
+				}
+//				else {
+//					System.out.println(arr[i]);
+//					
+//				}
+			}
+			if(count == 0)
+				return i;
+		}
+		
+		
+		return -1;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[] = { 1, 2, 3, -1, 2, 1, 0, 4, -1, 7, 8 };
+		
+		System.out.println(firstNonRepeating(arr, arr.length));
+		
+
+	}
+
+}

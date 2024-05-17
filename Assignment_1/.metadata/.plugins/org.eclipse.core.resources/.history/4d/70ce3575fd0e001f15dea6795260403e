@@ -1,0 +1,11 @@
+package com.sunbeam;
+
+//4. Create array of employees and search employee by i. empid ii. name iii. salary
+public class Question4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
